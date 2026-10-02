@@ -22,7 +22,7 @@
 
 ## 1. What this repo is
 
-This is an **IDE Data Science Club project template**. A team of PMs and members runs a data-science project out of it. The files an agent works with:
+This is an **Aggie Data Science Club project template**. A team of PMs and members runs a data-science project out of it. The files an agent works with:
 
 | File / folder | What the agent uses it for |
 |---|---|

@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Ideas & open questions
+    url: https://github.com/TAMU-Aggie-Data-Science-Club/fall2026-accel-llm/discussions
+    about: Use Discussions for brainstorming before opening an issue.

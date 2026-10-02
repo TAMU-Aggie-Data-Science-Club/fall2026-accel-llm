@@ -1,6 +1,6 @@
 # Contributing Guide
 
-This is the playbook for running an **IDE Data Science Club** project on GitHub. It is **not** a general Git tutorial — it assumes you can already commit and push. What it explains is *how we work together in this repo*: who does what, how work flows from an idea to `main`, and which Git commands you reach for at each step.
+This is the playbook for running an **Aggie Data Science Club** project on GitHub. It is **not** a general Git tutorial — it assumes you can already commit and push. What it explains is *how we work together in this repo*: who does what, how work flows from an idea to `main`, and which Git commands you reach for at each step.
 
 Read your role's section first. Everyone should read [The Flow](#the-flow-issue--main) and [Staying in Sync](#staying-in-sync) — they apply to all of us.
 
@@ -111,7 +111,7 @@ git push -u origin issue-42/integration
 
 **3. Create a worktree for your slice** (see [Worktrees](#worktrees-one-issue-one-tree)):
 ```sh
-git worktree add -b issue-42/loader ../PM_REPO_TEMPLATE.worktrees/loader issue-42/integration
+git worktree add -b issue-42/loader ../fall2026-accel-llm.worktrees/loader issue-42/integration
 ```
 
 **4. Build in small commits.** Each commit should be one coherent step, with a message that says *why*, not just *what*.
@@ -174,17 +174,17 @@ A **worktree** lets you check out multiple branches into **separate folders at t
 
 ```sh
 # create a new branch AND a folder for it, based off the integration branch
-git worktree add -b issue-42/loader ../PM_REPO_TEMPLATE.worktrees/loader issue-42/integration
+git worktree add -b issue-42/loader ../fall2026-accel-llm.worktrees/loader issue-42/integration
 
 # work in that folder like a normal clone
-cd ../PM_REPO_TEMPLATE.worktrees/loader
+cd ../fall2026-accel-llm.worktrees/loader
 # ...edit, commit, push...
 
 # see all active worktrees
 git worktree list
 
 # when the branch is merged and the folder is no longer needed
-git worktree remove ../PM_REPO_TEMPLATE.worktrees/loader
+git worktree remove ../fall2026-accel-llm.worktrees/loader
 ```
 
 Why we use them: parallel slices of one issue can each have their own folder, so switching contexts is `cd`, not `git stash` + `git switch`. The whole set of branches under `issue-42/` is that issue's **tree**, and it collapses back into `issue-42/integration` as slices merge up.

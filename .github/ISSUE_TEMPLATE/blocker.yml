@@ -1,0 +1,23 @@
+name: Blocker
+description: Something is stopping you — routes to the right PM
+labels: [blocker]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type
+      options:
+        - "Operational (sprint, docs, cross-team miscommunication) → Dhruv"
+        - "Architectural (math, HPRC deployment, vLLM engine, KV-cache) → Junyu"
+    validations: {required: true}
+  - type: dropdown
+    id: team
+    attributes:
+      label: Team
+      options: [Edge, Cloud, UI, Eval]
+    validations: {required: true}
+  - type: textarea
+    id: what
+    attributes:
+      label: What's blocked and what you tried
+    validations: {required: true}

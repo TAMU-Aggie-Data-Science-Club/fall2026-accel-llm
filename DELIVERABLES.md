@@ -6,31 +6,17 @@
 
 ## Milestones at a glance
 
-| # | Deliverable | Description | Owner (role) | Target |
+> Draft milestones — PMs to confirm dates.
+
+| # | Deliverable | Description | Owner (team) | Target |
 |---|-------------|-------------|--------------|--------|
-| 1 | Project scoping | Define the problem, success criteria, and out-of-scope items. | PM | Week 1 |
-| 2 | Data sourcing & access | Identify and secure the data sources (see [`DATA.md`](DATA.md)). | PM + members | Weeks 1–2 |
-| 3 | Data exploration (EDA) | Load, profile, and document the data; surface quality issues. | Members | Weeks 2–3 |
-| 4 | Data cleaning & prep | Reproducible pipeline from raw → analysis-ready. | Members | Weeks 3–4 |
-| 5 | Baseline model / analysis | First end-to-end result to beat. | Members | Weeks 4–5 |
-| 6 | Iteration & evaluation | Improve on the baseline; agree on evaluation metrics. | Members + PM | Weeks 5–7 |
-| 7 | Findings & deliverable | Report / dashboard / model artifact for the audience. | Members + PM | Weeks 7–8 |
-| 8 | Handoff & retro | Documentation, reproducibility check, lessons learned. | PM | Week 8 |
-
-## Timeline (rough)
-
-```
-Week:   1     2     3     4     5     6     7     8
-        |-----|-----|-----|-----|-----|-----|-----|
-Scope   ██
-Data          ████
-EDA                 ████
-Prep                      ████
-Baseline                        ██
-Iterate                              ████████
-Deliver                                       ████
-Retro                                              ██
-```
+| 1 | Onboarding | Read [`docs/READING.md`](docs/READING.md); local vLLM + HPRC access working. | All | TBD |
+| 2 | Single-node baseline | Speculative decoding (draft + target) on one machine; baseline metrics. | Edge + Cloud | TBD |
+| 3 | Distributed RPC | Edge draft model ↔ cloud verifier over RPC; schema in [`shared/`](shared/). | Edge + Cloud | TBD |
+| 4 | TSLT | Sparse logits transmission to cut uplink. | Edge + Cloud | TBD |
+| 5 | Live dashboard | Streamlit view of TTFT, TPOT, acceptance rate, uplink bytes. | UI | TBD |
+| 6 | Evaluation | Prove latency reduction vs. cloud-only and edge-only baselines. | Eval | TBD |
+| 7 | Deployment & demo | Distributed vLLM server on HPRC + dashboard demo. | All | TBD |
 
 ## Working agreements
 

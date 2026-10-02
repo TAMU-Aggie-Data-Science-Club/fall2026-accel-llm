@@ -32,7 +32,9 @@ Document every source here as you adopt it. Replace these placeholders.
 
 | Source | Origin / URL | Access method | License | Sensitivity | Notes |
 |--------|--------------|---------------|---------|-------------|-------|
-| _e.g. Example Open Dataset_ | `https://…` | Manual download → `data/raw/` | CC-BY-4.0 | None | Updated annually |
+| Draft model (TBD) | Hugging Face | `huggingface-cli download` → `models/` (git-ignored) | TBD | None | Small, edge-runnable |
+| Target model (TBD) | Hugging Face | Download on HPRC scratch | TBD | None | Large, cloud verifier |
+| Prompt / eval set (TBD, e.g. ShareGPT, MT-Bench) | TBD | Download → `data/raw/` | TBD | Check for PII | Used for latency benchmarks |
 | | | | | | |
 
 ## Local layout convention
