@@ -25,3 +25,11 @@ __pycache__/
 venv/
 .env
 .ipynb_checkpoints/
+
+# --- Models / HPRC ----------------------------------------------------------
+models/
+*.safetensors
+*.gguf
+*.bin
+slurm-*.out
+.streamlit/secrets.toml

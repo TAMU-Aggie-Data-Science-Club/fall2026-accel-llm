@@ -1,0 +1,42 @@
+name: Weekly Update
+description: One per week — what you did, what's next, meeting info
+title: "Weekly Update — Week of <date>"
+labels: [weekly-update]
+body:
+  - type: textarea
+    id: done
+    attributes:
+      label: What we did this week
+      description: Bullets of completed work.
+    validations: {required: true}
+  - type: textarea
+    id: questions
+    attributes:
+      label: Questions for officers
+  - type: textarea
+    id: slowing
+    attributes:
+      label: What's slowing us down
+  - type: textarea
+    id: reflect
+    attributes:
+      label: Did we do what we planned?
+      description: Compare against last week's plan.
+    validations: {required: true}
+  - type: textarea
+    id: next
+    attributes:
+      label: Plan for next week
+      description: Be logical, detailed, and clear.
+    validations: {required: true}
+  - type: input
+    id: when
+    attributes:
+      label: Meeting date / time
+    validations: {required: true}
+  - type: textarea
+    id: attendance
+    attributes:
+      label: Attendance
+      description: Google Sheets link or list of names.
+    validations: {required: true}

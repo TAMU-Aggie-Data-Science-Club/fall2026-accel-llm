@@ -1,33 +1,55 @@
-# CODEOWNERS â€” project roster + review policy
+# CODEOWNERS — AccelLLM roster + review policy
 #
 # This file is BOTH the team roster AND the code-owner rule for this repo.
-# The rule at the bottom (starting with `*`) is what GitHub enforces:
-# it auto-requests review from the listed owners on any PR into `main`.
+# Later rules override earlier ones, so sub-team owners win inside their folders.
+# Every @handle on an active (uncommented) rule must have write access to the repo.
+# Missing handles stay commented out until the person shares their GitHub handle.
 
-# â”€â”€ Project Managers (code owners for main-branch merges) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-# Full name        GitHub handle    Email
-# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-# (add PMs here when the project starts, one per line)
+# ── Project Managers ──────────────────────────────────────────────────
+# Junyu (Cyrus) Xu         @junyuxu2006     Lead Technical Architect & Director
+# Dhruv Kalyanram Raajeev  @dhruvraajeev    Operations Architect
+# Faculty Advisor: I-Hong Hou
 
-# â”€â”€ Members â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-# Full name        GitHub handle    Email
-# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-# (add members here as they join, one per line)
+# ── Team 1: Edge & Inference Systems (draft model)  → /edge/ ──────────
+# Anirudh                  @TBD
+# Johanna                  @TBD
+# Matthew                  @TBD
 
+# ── Team 2: Cloud Infrastructure & Distributed RPC (target model) → /cloud/
+# Allen                    @TBD
+# Georgi                   @TBD
+# Kevin                    @TBD
+# Matthew                  @TBD
+# Patrick                  @TBD
+# Sidharth                 @TBD
+
+# ── Team 3: Real-Time UI & Data Streaming (dashboard) → /ui/ ──────────
+# Kanta                    @TBD
+# Rafael                   @TBD
+# Ritej                    @TBD
+# Sree                     @TBD
+# Vedik                    @TBD
+
+# ── Team 4: Telemetry Evaluation & Project Management → /eval/ ────────
+# Alex                     @TBD
+# Dhruv                    @dhruvraajeev
+# Sunghyun                 @TBD
+
+# ── Unassigned (has repo access, team TBD) ────────────────────────────
 # @Tal1762
-# @junyuxu2006
-# â”€â”€ Review policy â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-# Everyone listed on the rule below is a Code Owner. GitHub will require
-# at least one of them to approve any PR targeting `main`.
-#
-# PMs: to grant a member the ability to approve main-merges, add their
-# @handle to the line below.
 
-* @TAMU-Aggie-Data-Science-Club/officers
+# ── Review policy: main ───────────────────────────────────────────────
+* @junyuxu2006 @dhruvraajeev @TAMU-Aggie-Data-Science-Club/officers
 
-# â”€â”€ Officer-locked paths â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-# Workflows and secret-scanning config carry security implications.
-# Changes here require officer approval regardless of who the PMs are.
+# ── Sub-team owners (uncomment and add the team lead's handle) ────────
+# /edge/   @EDGE_LEAD  @junyuxu2006
+# /cloud/  @CLOUD_LEAD @junyuxu2006
+# /ui/     @UI_LEAD    @dhruvraajeev
+# /eval/   @EVAL_LEAD  @dhruvraajeev
 
+# Shared interfaces (RPC/TSLT payload schema) — architecture approval required
+/shared/ @junyuxu2006
+
+# ── Officer-locked paths ──────────────────────────────────────────────
 /.github/       @TAMU-Aggie-Data-Science-Club/officers
 /.gitleaks.toml @TAMU-Aggie-Data-Science-Club/officers

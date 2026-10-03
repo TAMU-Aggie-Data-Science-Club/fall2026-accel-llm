@@ -1,6 +1,6 @@
-# ADSC Project Template
+# AccelLLM
 
-A starter repository for **project managers (PMs)** in the [TAMU Aggie Data Science Club](https://github.com/TAMU-Aggie-Data-Science-Club). Click **Use this template** to spin up a new project with the club's conventions, workflow, and scaffolding already in place.
+Distributed **edge-to-cloud speculative decoding**: a fast local draft model paired with a large cloud target model on vLLM, synced over a sparse-logits protocol (TSLT) for single-pass verification. Deliverables: a distributed vLLM server and a real-time Streamlit dashboard. Sub-teams: [`edge/`](edge/), [`cloud/`](cloud/), [`ui/`](ui/), [`eval/`](eval/); cross-team contracts live in [`shared/`](shared/). Weekly updates use the **Weekly Update** issue form.
 
 ## What's in here
 
