@@ -25,9 +25,12 @@
 - **"Done" is defined per issue** via acceptance criteria — not by a date passing.
 - **Reprioritize openly.** If a deliverable changes, a PM notes why in the issue so the decision is auditable.
 
-AccelLLM: Project Roadmap & Operations
+## AccelLLM: Project Roadmap & Operations
+
 Lead Technical Architect: Junyu
+
 Technical Program Manager: Dhruv
+
 Principal Faculty Advisor: Dr. Ihong Hou
 
 1. Subteam Workflow & Semester Progression
