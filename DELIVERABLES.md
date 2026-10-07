@@ -33,7 +33,7 @@ Technical Program Manager: Dhruv
 
 Principal Faculty Advisor: Dr. Ihong Hou
 
-1. Subteam Workflow & Semester Progression
+1. **Subteam Workflow & Semester Progression**
 The AccelLLM project operates across a 16-person roster divided into four highly specialized subteams. Because this architecture involves distributed computing across hardware-constrained local devices and High-Performance Research Computing (HPRC) clusters, strict boundaries and data contracts are required.
 
 Subteam Responsibilities & Execution Plan:
@@ -64,7 +64,7 @@ PDF
 
 Phase 4: Telemetry Benchmarking & Polish (Weeks 12-14): Team 4 runs rigorous statistical evaluations on system performance across various batch sizes. Finalize the dashboard and prepare project documentation.
 
-2. Finalized Data Sources
+2. **Finalized Data Sources**
 Since AccelLLM focuses on LLM infrastructure and inference optimization, our "data sources" consist of the model weights and the standardized benchmarking datasets used to measure system throughput.
 
 Model Repositories (HuggingFace):
@@ -81,7 +81,7 @@ GSM8K (Reasoning): Used to test generation accuracy and ensure our speculative d
 
 Live Telemetry Data: Telemetry metrics generated dynamically by the system, including Time Per Output Token (TPOT), Time to First Token (TTFT), GPU memory usage, and token acceptance rates.
 
-3. GitHub Structure & Contribution Workflow
+3. **GitHub Structure & Contribution Workflow**
 With 16 active members, AccelLLM will use a strict, structured monorepo environment to prevent merge conflicts between the networking backend and frontend UI.
 
 Repository Structure
