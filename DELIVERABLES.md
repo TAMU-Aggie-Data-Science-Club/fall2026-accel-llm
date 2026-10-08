@@ -18,6 +18,8 @@
 | 6 | Evaluation | Prove latency reduction vs. cloud-only and edge-only baselines. | Eval | Week 13 |
 | 7 | Deployment & demo | Distributed vLLM server on HPRC + dashboard demo. | All | Week 14 |
 
+Week 1: Google Form Quiz: https://forms.gle/kNXyt6A6Vfj15KBV7
+Reflection Form: https://forms.gle/51cFMPnyJHqTTkjd7
 ## Working agreements
 
 - **Each deliverable maps to one or more GitHub Issues.** The board is the source of truth; this file is the summary.
