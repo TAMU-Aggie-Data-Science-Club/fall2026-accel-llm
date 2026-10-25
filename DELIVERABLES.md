@@ -25,6 +25,8 @@ Week 2: Compute and Environment Onboarding: https://forms.gle/yk7A8k2mZJRLJKQp8
 Edge: Write an edge_client_firstname_lastname.py script that loads our small quantized draft model and generates exactly 5 speculative tokens locally. Extract the logprobs, and fire an HTTP POST request to a local endpoint. Please react 👍 when you have read this.
 Cloud: Build a barebones FastAPI/RPC server (cloud_server_firstname_lastname.py) that accepts any payload, appends a "[VERIFIED]" tag to the text string, and returns it.
 
+Week 3: Distributed Speculative Decoding Performance Reflection: https://forms.gle/rEKpropYG6FQ5ssN7
+Edge/Cloud: Upload Versions of code that contain optimizations
 ## Working agreements
 
 - **Each deliverable maps to one or more GitHub Issues.** The board is the source of truth; this file is the summary.
