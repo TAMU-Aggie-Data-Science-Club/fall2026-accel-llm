@@ -32,8 +32,10 @@ Document every source here as you adopt it. Replace these placeholders.
 
 | Source | Origin / URL | Access method | License | Sensitivity | Notes |
 |--------|--------------|---------------|---------|-------------|-------|
-| Draft model (TBD) | Hugging Face | `huggingface-cli download` → `models/` (git-ignored) | TBD | None | Small, edge-runnable |
-| Target model (TBD) | Hugging Face | Download on HPRC scratch | TBD | None | Large, cloud verifier |
+| Draft model: Qwen1.5-1.8B | [Qwen/Qwen1.5-1.8B](https://huggingface.co/Qwen/Qwen1.5-1.8B) | Hugging Face CLI → HPRC `$SCRATCH/models/` (git-ignored) | Tongyi Qianwen Research License; non-commercial use only | None known | Selected as the proposed edge draft; review the license and confirm project use is non-commercial before download. |
+| Target model: Llama-3-70B-Instruct | [meta-llama/Meta-Llama-3-70B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct) | Request gated Hugging Face access, accept license, then download to HPRC `$SCRATCH/models/` (git-ignored) | Meta Llama 3 Community License | None known | Selected as the proposed cloud verifier; gated access is required. Confirm HPRC GPU capacity and scratch quota before download. |
+| Local test model: Qwen1.5-1.8B-Chat | [Qwen/Qwen1.5-1.8B-Chat](https://huggingface.co/Qwen/Qwen1.5-1.8B-Chat) | `hf download` → local `models/` (git-ignored) | Tongyi Qianwen Research License; non-commercial use only | None known | Chat variant of the draft; used as the local model and local *target* in `edge/local_onboarding.py`. |
+| Local draft: Qwen1.5-0.5B-Chat | [Qwen/Qwen1.5-0.5B-Chat](https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat) | `hf download` → local `models/` (git-ignored) | Tongyi Qianwen Research License; non-commercial use only | None known | Shares the 1.8B tokenizer, so it can draft for it in the local speculative-decoding comparison. |
 | Prompt / eval set (TBD, e.g. ShareGPT, MT-Bench) | TBD | Download → `data/raw/` | TBD | Check for PII | Used for latency benchmarks |
 | | | | | | |
 
