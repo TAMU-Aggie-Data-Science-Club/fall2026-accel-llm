@@ -27,6 +27,16 @@ Cloud: Build a barebones FastAPI/RPC server (cloud_server_firstname_lastname.py)
 
 Week 3: Distributed Speculative Decoding Performance Reflection: https://forms.gle/rEKpropYG6FQ5ssN7
 Edge/Cloud: Upload Versions of code that contain optimizations
+
+Week of 11/16 (final week): everything below is due by Sun 11/22.
+- All: push every piece of working code to the repo and open a PR. Code that is not on GitHub does not count.
+- Edge + Cloud: the HPRC pipeline (draft on edge, target on HPRC, verifier over RPC) runs end to end from `shared/` / `dashboard/`. Note the exact models and the run command in your folder's README.
+- UI: dashboard polish. Merge open UI PRs, and make the dashboard show TTFT, TPOT, throughput and acceptance rate live.
+- Eval (Team 4): final evaluation. Run the benchmark on HPRC for target-only vs distributed speculative decoding, save the raw numbers in `eval/` (CSV), and make one comparison chart for the poster.
+- PMs: poster (36×48 trifold, ADSC template, sections: Introduction, Objective, Methods, Results, Discussion, Conclusion, References).
+- Repo polish: every folder README says what is in it and how to run it; stale PRs closed or merged.
+- Final workshop + demo video: Fri 11/20, 4–7 PM, ZACH 252. React to the announcement to RSVP.
+- ADSC Project Showcase: Tue 12/1, 6:30–8:30 PM, Zach ConocoPhillips Atrium (presenters arrive 6:00, business formal).
 ## Working agreements
 
 - **Each deliverable maps to one or more GitHub Issues.** The board is the source of truth; this file is the summary.
